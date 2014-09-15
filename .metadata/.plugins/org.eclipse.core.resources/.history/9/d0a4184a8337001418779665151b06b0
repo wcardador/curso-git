@@ -1,0 +1,7 @@
+
+public class ICMS implements Imposto {
+	
+	public double calculaICMS(Orcamento orcamento) {
+		return orcamento.getValor() * calculaICMS(0.1);
+	}
+}

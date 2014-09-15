@@ -1,0 +1,9 @@
+package template;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Orcamento o = new Orcamento(500);
+		
+	}
+}

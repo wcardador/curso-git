@@ -1,0 +1,23 @@
+package template;
+
+public class IHIT extends TemplateDeImpostoCondicional {
+
+	@Override
+	public double maximaTaxacao(Orcamento orcamento) {
+		for(Item item) {
+			
+		}
+	}
+
+	@Override
+	public double minimaTaxacao(Orcamento orcamento) {
+		return orcamento.getValor() * 0.01;
+	}
+
+	@Override
+	public boolean deveUsarMaximaTaxacao(Orcamento orcamento) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

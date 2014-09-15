@@ -1,0 +1,24 @@
+package chainOfResponsibility;
+public class TesteDeInvestimentos {
+
+	public static void main(String[] args) {
+		Investimento conservador = new Conservador();
+		Investimento moderado = new Moderado();
+		Investimento arrojado = new Arrojado();
+		
+		Conta c1 = new Conta();
+		c1.deposita(100);
+		Conta c2 = new Conta();
+		c2.deposita(100);
+		Conta c3 = new Conta();
+		c3.deposita(100);
+		
+		RealizadorDeInvestimentos r1 = new RealizadorDeInvestimentos();
+		RealizadorDeInvestimentos r2 = new RealizadorDeInvestimentos();
+		RealizadorDeInvestimentos r3 = new RealizadorDeInvestimentos();
+		
+		r1.realiza(c1, conservador);
+		r2.realiza(c2, moderado);
+		r3.realiza(c3, arrojado);
+	}
+}

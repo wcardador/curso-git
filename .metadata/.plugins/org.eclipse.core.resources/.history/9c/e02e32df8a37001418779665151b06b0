@@ -1,0 +1,6 @@
+public class TesteDeInvestimentos {
+
+	public static void main(String[] args) {
+		new RealizadorDeInvestimentos().realiza(conta, investimento);
+	}
+}

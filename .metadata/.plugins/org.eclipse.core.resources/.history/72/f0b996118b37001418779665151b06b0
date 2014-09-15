@@ -1,0 +1,12 @@
+public class TesteDeInvestimentos {
+
+	public static void main(String[] args) {
+		Investimento conservador = new Conservador();
+		Investimento moderado = new Moderado();
+		Investimento arrojado = new Arrojado();
+		
+		RealizadorDeInvestimentos r1 new RealizadorDeInvestimentos().realiza(conta, conservador);
+		RealizadorDeInvestimentos r2 new RealizadorDeInvestimentos().realiza(conta, moderado);
+		RealizadorDeInvestimentos r3 new RealizadorDeInvestimentos().realiza(conta, arrojado);
+	}
+}

@@ -1,0 +1,29 @@
+package template;
+
+import java.util.ArrayList;
+
+public class IHIT extends TemplateDeImpostoCondicional {
+
+	@Override
+	public double maximaTaxacao(Orcamento orcamento) {
+		return orcamento.getValor() * 0.13 + 100;
+	}
+
+	@Override
+	public double minimaTaxacao(Orcamento orcamento) {
+		return orcamento.getValor() * 0.01;
+	}
+
+	@Override
+	public boolean deveUsarMaximaTaxacao(Orcamento orcamento) {
+		return temItemsDuplicados(orcamento);
+	}
+
+	private boolean temItemsDuplicados(Orcamento orcamento) {
+		List<String> noOrcamento = new ArrayList<String>();
+		for(Item item: orcamento.getItens()) {
+			
+		}
+	}
+
+}

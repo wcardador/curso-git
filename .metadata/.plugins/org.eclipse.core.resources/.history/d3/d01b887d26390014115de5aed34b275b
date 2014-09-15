@@ -1,0 +1,19 @@
+package template;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Orcamento o = new Orcamento(500);
+		o.adicionaItem(new Item("CANETA", 10));
+		o.adicionaItem(new Item("LAPIS",  20));
+		o.adicionaItem(new Item("BORRACHA", 100));
+		
+		ICPP icpp = new ICPP();
+		IKCV ickp = new IKCV();
+		
+		System.out.println(icpp.calcula(o));
+		System.out.println(ikcv.calcula(o));
+		
+	}
+}

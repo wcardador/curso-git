@@ -1,0 +1,10 @@
+public class TesteDeInvestimentos {
+
+	public static void main(String[] args) {
+
+		
+		RealizadorDeInvestimentos r1 new RealizadorDeInvestimentos().realiza(conta, investimento);
+		RealizadorDeInvestimentos r2 new RealizadorDeInvestimentos().realiza(conta, investimento);
+		RealizadorDeInvestimentos r3 new RealizadorDeInvestimentos().realiza(conta, investimento);
+	}
+}

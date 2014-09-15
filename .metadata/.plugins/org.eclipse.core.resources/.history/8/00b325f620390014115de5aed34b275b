@@ -1,0 +1,7 @@
+package template;
+
+public class Item {
+	private final String nome;
+	private final double valor;
+	
+}
